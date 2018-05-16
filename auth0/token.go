@@ -1,10 +1,8 @@
 package auth0
 
 import (
-	"encoding/json"
-
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/http"
 	"github.com/pkg/errors"
-	"github.com/zenoss/go-auth0/auth0/http"
 )
 
 // TokenService provides a service for token related functions
@@ -46,11 +44,7 @@ type TokenRequestBody struct {
 // an access token, token type, and expiration
 func (svc *TokenService) GetToken(body TokenRequestBody) (*TokenResponseBody, error) {
 	var resBody TokenResponseBody
-	reqBody, err := json.Marshal(body)
-	if err != nil {
-		return &resBody, errors.Wrap(err, "Cannot marshal TokenRequestBody")
-	}
-	err = svc.Post("/oauth/token", reqBody, &resBody)
+	err := svc.Post("/oauth/token", body, &resBody)
 	if err != nil {
 		return nil, errors.Wrap(err, "Cannot complete token request")
 	}

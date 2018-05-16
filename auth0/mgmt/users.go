@@ -1,7 +1,7 @@
 package mgmt
 
 import (
-	"github.com/zenoss/go-auth0/auth0/http"
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/http"
 )
 
 // UsersService provides a service for user related functions

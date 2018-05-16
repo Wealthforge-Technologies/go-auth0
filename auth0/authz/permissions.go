@@ -1,7 +1,7 @@
 package authz
 
 import (
-	"github.com/zenoss/go-auth0/auth0/http"
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/http"
 )
 
 // PermissionsService provides a service for permission related functions

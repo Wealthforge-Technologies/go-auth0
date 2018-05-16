@@ -1,7 +1,7 @@
 package authz
 
 import (
-	http "github.com/zenoss/go-auth0/auth0/http"
+	http "github.com/Wealthforge-Technologies/go-auth0/auth0/http"
 )
 
 // AuthorizationService is a gateway to Auth0 Authorization Extension services

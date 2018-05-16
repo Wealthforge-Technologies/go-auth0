@@ -1,8 +1,8 @@
 package authz
 
 import (
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/http"
 	"github.com/pkg/errors"
-	"github.com/zenoss/go-auth0/auth0/http"
 )
 
 // GroupsService provides a service for group related functions

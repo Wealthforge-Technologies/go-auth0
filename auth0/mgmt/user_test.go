@@ -3,8 +3,8 @@
 package mgmt_test
 
 import (
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/mgmt"
 	"github.com/stretchr/testify/assert"
-	"github.com/zenoss/go-auth0/auth0/mgmt"
 )
 
 const (

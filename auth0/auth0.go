@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/url"
 
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/authz"
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/http"
+	"github.com/Wealthforge-Technologies/go-auth0/auth0/mgmt"
 	"github.com/pkg/errors"
-	"github.com/zenoss/go-auth0/auth0/authz"
-	"github.com/zenoss/go-auth0/auth0/http"
-	"github.com/zenoss/go-auth0/auth0/mgmt"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 )
